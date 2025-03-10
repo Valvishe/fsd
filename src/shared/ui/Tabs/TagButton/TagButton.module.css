@@ -1,0 +1,43 @@
+.tagBtn {
+    display: flex;
+    gap: 4px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--content-medium);
+    border: none;
+    background-color: transparent;
+}
+
+.tagEdits {
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.tagReviewsCount {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--content-medium);
+}
+
+.tagEditsMobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tagEditsMobile {
+        display: block;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .tabsItemActive .tabsEditsMobile {
+        padding-bottom: 4px;
+        color: var(--content-dark);
+        border-bottom: 2px solid var(--content-dark);
+    }
+
+    .tagEdits {
+        display: none;
+    }
+}

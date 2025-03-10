@@ -1,0 +1,155 @@
+.button {
+  border-radius: 8px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  max-width: max-content;
+}
+
+.button.text,
+.button.iconOutlined,
+.button.textUnderlined {
+  padding: 0;
+}
+
+.primary {
+  background: var(--blue-medium);
+  color: var(--dominant-main);
+}
+
+.primary:hover {
+  background: var(--blue-light);
+}
+
+.primary:active {
+  background: var(--blue-dark);
+}
+
+.text,
+.textUnderlined {
+  display: inline-block;
+}
+
+.outlined,
+.text {
+  color: var(--blue-medium);
+}
+
+.outlined {
+  outline: solid 1px var(--blue-medium);
+}
+
+.outlined:hover,
+.text:hover {
+  color: var(--blue-light);
+}
+
+.outlined:hover {
+  outline: solid 1px var(--blue-light);
+}
+
+.outlined:active,
+.text:active {
+  color: var(--blue-dark);
+}
+
+.outlined:active {
+  outline: solid 1px var(--blue-dark);
+}
+
+.primary .s {
+  font-weight: 500;
+}
+
+.s {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.primary .l {
+  font-weight: 500;
+}
+
+.l {
+  padding: 18px 26px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.withIcon {
+  display: flex;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.leftIcon {
+  margin-right: 18px;
+  margin-left: 0;
+}
+
+.rightIcon {
+  margin-left: 18px;
+  margin-right: 0;
+}
+
+.smallIcon {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+.leftSmallIcon {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.rightSmallIcon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.textUnderlined {
+  color: var(--blue-medium);
+  border-bottom: 1px solid var(--blue-medium);
+  border-radius: 0;
+  line-height: 24px;
+}
+
+.textUnderlined:hover {
+  color: var(--blue-light);
+  border-color: var(--blue-light);
+}
+
+.textUnderlined:active {
+  color: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
+@media screen and (max-width: 768px) {
+  .s {
+    padding: 8px;
+  }
+
+  .l {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

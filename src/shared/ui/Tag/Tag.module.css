@@ -1,0 +1,62 @@
+.tag {
+  display: flex;
+  align-items: center;
+}
+
+.tag svg {
+  color: var(--dominant-main);
+}
+
+.tag span {
+  color: var(--dominant-main);
+}
+
+.s {
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 49px;
+}
+
+.m {
+  gap: 4px;
+  padding: 6px 8px;
+  border-radius: 28px;
+}
+
+.s svg {
+  width: 16px;
+  height: 16px;
+}
+
+.m svg {
+  width: 24px;
+  height: 24px;
+}
+
+.s span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.tagM span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.greenLight {
+  background-color: var(--green-light);
+}

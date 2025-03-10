@@ -1,0 +1,97 @@
+.button {
+    margin: 50px;
+}
+
+.NotificationIconTop {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.iconContainerHorizont {
+    width: 300px;
+    padding: 8px;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.iconColorRed {
+    background-color: var(--red);
+    color: white;
+}
+
+.iconColorGreen {
+    background-color: var(--green);
+    color: white;
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 18px;
+    text-align: left;
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--content-dark, #373737);
+}
+
+
+.textContainerColorRed {
+    border: 1px solid var(--red, #EA4335);
+    background: var(--dominant-main, #FFF);
+}
+
+.textContainerColorGreen {
+    border: 1px solid var(--green);
+    background: var(--dominant-main, #FFF);
+}
+
+
+@media screen and (max-width: 768px) {
+    .iconContainerHorizont {
+        width: 300px;
+        padding: 8px;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    .NotificiationIconTopVertical {
+        flex-direction: row;
+        min-height: 60px;
+    }
+
+    .iconContainerVertical {
+        width: 76px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .iconVertical {
+        width: 40px;
+        height: 40px;
+    }
+
+    .textContainerVertical {
+        padding: 10px;
+        border-radius: 0 8px 8px 0;
+        flex: 1;
+    }
+}

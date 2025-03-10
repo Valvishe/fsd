@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  font-weight: 400;
+  color: var(--content-medium, #787a7c);
+  position: relative;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--content-medium, #787a7c);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.error {
+  border-color: var(--red);
+}
+
+.errorMessage {
+  color: var(--red);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+
+  color: var(--content-medium, #787a7c);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  border-radius: 8px;
+  border: 1px solid var(--content-light, #dddfe1);
+
+  padding: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .textarea {
+    border-radius: 0 0 8px 8px;
+    padding: 18px 12px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.textarea:hover {
+  border: solid 1px var(--content-dark);
+}
+
+.textarea:focus {
+  color: var(--content-dark, #373737);
+  border: solid 1px var(--content-dark);
+}

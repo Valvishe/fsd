@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  gap: 26px;
+}
+
+.reverseIcons {
+  flex-direction: row-reverse;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+}
+
+.filled {
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  padding: 1px 8px;
+  min-width: 78px;
+  justify-content: center;
+}
+
+.filled:last-child {
+  border: 1px solid var(--red);
+}
+
+.filled svg {
+  width: 20px;
+  height: 20px;
+}
+
+.filled .count {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.filled:hover {
+  background: var(--green-light);
+}
+
+.filled:last-child:hover {
+  background: var(--red-light);
+}
+
+.filled:hover svg,
+.filled:hover .count,
+.filled:last-child:hover svg,
+.filled:last-child:hover .count {
+  color: var(--dominant-main);
+}
+
+.filled.checked {
+  background-color: var(--green);
+}
+
+.filled:hover.checked {
+  background-color: var(--green-light);
+  border: 1px solid var(--green-light);
+}
+
+.filled:last-child.checked {
+  background-color: var(--red);
+}
+
+.filled:last-child:hover.checked {
+  background-color: var(--red-light);
+  border: 1px solid var(--red-light);
+}
+
+.filled.checked svg,
+.filled.checked .count {
+  color: var(--dominant-main);
+}
+
+.filled.checked svg,
+.filled.checked .count {
+  color: var(--dominant-main);
+}
+
+.like {
+  align-items: start;
+}
+
+.like:hover svg {
+  color: var(--green-light);
+}
+button:hover.filled.checked.like svg {
+  color: var(--dominant-main);
+}
+button:hover.filled.like svg {
+  color: var(--dominant-main);
+}
+.like .icon,
+.like:active:hover .count {
+  color: var(--green);
+}
+
+.like .checked {
+  fill: var(--green);
+}
+
+.like:hover.icon,
+.like:hover.count {
+  color: var(--green-light);
+}
+
+.like:hover .icon {
+  fill: var(--green-light);
+}
+
+.like:active:hover .icon {
+  color: var(--green);
+  fill: var(--green);
+}
+
+.dislike {
+  align-items: flex-end;
+}
+
+.dislike .icon,
+.dislike:active:hover .count {
+  color: var(--red);
+}
+
+.dislike .checked {
+  fill: var(--red);
+}
+
+.dislike:hover .icon {
+  color: var(--red-light);
+}
+
+.dislike:hover .icon {
+  fill: var(--red-light);
+}
+
+.dislike:active:hover .icon {
+  color: var(--red);
+  fill: var(--red);
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  height: 100%;
+  width: 1px;
+}
+
+.dislike .empty,
+.like .empty {
+  background: none;
+}
+
+.count {
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.like .count {
+  color: var(--green);
+}
+
+.dislike .count {
+  color: var(--red);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--dominant-main);
+}
+
+.dislike svg {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .m {
+    gap: 18px;
+  }
+}
